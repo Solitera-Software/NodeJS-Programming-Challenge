@@ -10,6 +10,7 @@ We need a middle ware which enable us to rate limit the api call per minute.
 3. Max bucketCoins allowed is (60 * perAPICoins)/numberCallAllowedPerMinute
 4. On Each API call we will check for number of available coins in bucket, if bucket have sufficient coins then allow api call and deduct coins from bucket for that api call, else throw limit exide error (give respone)
 
+Note: Write your solution in middleware/rateLimit.js File
 
 ## Acceptance Criteria
 1. Working Code 
